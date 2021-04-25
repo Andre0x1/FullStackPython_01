@@ -36,3 +36,12 @@ Parte -02
     python .\manage.py makemigrations
 	python .\manage.py migrate
 
+Parte 03
+
+1- Instalar NPM e NodeJS.
+
+2- Criar no APP para o frontend
+    
+    django-admin startapp frontend
+
+3 Criar pastas dentro de frontend
