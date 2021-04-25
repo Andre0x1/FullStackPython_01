@@ -1,7 +1,14 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from rest_framework import generics
+from .serializers import RoomSerializers
+from .models import Room
 
 
-def main(request):
-    return HttpResponse("<h1>Hello</h1>")
+class RoomView(generics.CreateAPIView):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializers
 
+
+class RoomList(generics.ListAPIView):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializers
