@@ -68,4 +68,18 @@ Parte 03
     
     npm init -y
 
+5- Instalar pacotes do NPM:
+    
+    npm i webpack webpack-cli --save-dev
+    npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+    npm i react react-dom --save-dev
+    npm install @material-ui/core
+    npm install @babel/plugin-proposal-class-properties
+    npm install react-router-dom
+    npm install @material-ui/icons
 
+6- Criar configuration scripts
+
+    Criar em frontend : babel.config.json 
+    Copiar texto em : https://github.com/techwithtim/Music-Controller-Web-App-Tutorial/blob/main/Tutorial%201%20-%204/frontend/babel.config.json
+    
