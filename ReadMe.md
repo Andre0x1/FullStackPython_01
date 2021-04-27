@@ -2,6 +2,13 @@ Detalhes de criação do projeto:
 
 	Projeto criado como sendo teste para criação de um modelo fullTack Python-Django
 	
+Nescesario instalação:
+    
+    Django : pip install Django
+    Node.js: pip install nodejs
+    Rest_framework:pip install djangorestframework 
+
+
 1- Passos durante a criação do projeto:
 
 	Django startproject 'Nomeprojeto' -- Cria pasta referente ao projeto total;
@@ -31,7 +38,14 @@ Parte -02
 
 2- Focar logica nos models e não nas views
 
-3- Toda mundaça nos modelos é nescessario rodar:
+3- Criar serializers para o seus modulos, com as variaveis referentes ao modelo 
+    
+    from rest_framework import serializers
+    from .models import Room    
+    
+    class RoomSerializers(serializers.ModelSerializer):
+
+4- Toda mudança nos modelos é nescessario rodar:
 
     python .\manage.py makemigrations
 	python .\manage.py migrate
@@ -45,3 +59,13 @@ Parte 03
     django-admin startapp frontend
 
 3 Criar pastas dentro de frontend
+
+    src - componentes
+    static- css , frontend , images
+    templates
+
+4- Rodar no terminal para criar dados do node.js:
+    
+    npm init -y
+
+
