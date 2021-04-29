@@ -62,7 +62,7 @@ Parte 03
 
     src - componentes
     static- css , frontend , images
-    templates
+    templates - frontend
 
 4- Rodar no terminal para criar dados do node.js:
     
@@ -82,4 +82,20 @@ Parte 03
 
     Criar em frontend : babel.config.json 
     Copiar texto em : https://github.com/techwithtim/Music-Controller-Web-App-Tutorial/blob/main/Tutorial%201%20-%204/frontend/babel.config.json
+    criar em frontend:webpack.config.js
+    Copiar texto em : https://github.com/techwithtim/Music-Controller-Web-App-Tutorial/blob/main/Tutorial%201%20-%204/frontend/webpack.config.js
+
+7- Adicionar em package.json scripts:
     
+    "dev": "webpack --mode development --watch"
+    "build": "webpack --mode production"
+
+8- Criar em src/index.js e templates/frontend/index.html
+
+9- Completar dados de index.html
+
+10- Definir funções em view.py para renderizar paginas
+
+11- Criar urls,py em frontend
+
+12 Adicionar linhas em NomeApp
