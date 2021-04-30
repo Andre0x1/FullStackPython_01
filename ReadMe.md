@@ -27,7 +27,7 @@ Nescesario instalação:
 
 	python .\manage.py makemigrations
 	python .\manage.py migrate
-	python .\manage.py run server
+	python .\manage.py runserver
 
 Parte -02
 
@@ -96,6 +96,23 @@ Parte 03
 
 10- Definir funções em view.py para renderizar paginas
 
-11- Criar urls,py em frontend
+11- Criar urls.py em frontend
 
-12 Adicionar linhas em NomeApp
+12 Adicionar linhas em NomeApp.urls
+
+13- Vincular em front.urls  chamada para indesx do .views
+
+14- Criar App.js em Components
+
+15 - Importar App.js em Index.js
+
+16 - Em musicControler adicionar em setting.py
+
+    INSTALLED APPS: 
+    'frontendend.apps.FrontendConfig'
+
+16 - Rodar comando em frontend
+    
+    npm run dev
+
+
