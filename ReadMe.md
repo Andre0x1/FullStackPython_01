@@ -115,4 +115,51 @@ Parte 03
     
     npm run dev
 
+Parte 04
 
+1- Criar em frontend/static/css: index.css
+
+2- Criar estilos:
+        
+    #nome_id:
+3- Criar em components e criar Funções
+
+    HomePage.js
+
+4- Inserir em Apps.JS
+
+    import Homepage from "./HomePage";
+
+5- Atualizar render em Apps.js para:
+
+     render(){
+        return <HomePage />;
+    }
+
+6- Crias paginas em components:
+    
+    RoomJoinPage.js
+    CreateRoomPage.js
+
+7- Importar em HomePage.js:
+
+    import CreateRoomPage from "./CreateRoomPage";
+    import RoomJoinPage from "./RoomJoinPage"; 
+    import {BrowserRouter as Router,Switch,Route,Link,Redirect} from "react-router-dom";
+
+8- Criar dentro de render() Router com Switch para Routes das paginas criadas:
+
+    <Router>
+        <Switch>
+            <Route exact path='/'><p>Homepage</p></Route>
+            --etc..
+        </Switch>
+    </Router>
+
+9- Atualizar as path em urls.py:
+
+
+
+    
+
+    
