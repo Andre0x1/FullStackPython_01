@@ -122,3 +122,27 @@ Parte 04
 2- Criar estilos:
         
     #nome_id:
+3- Criar em components e criar Funções
+
+    HomePage.js
+
+4- Inserir em Apps.JS
+
+    import Homepage from "./HomePage";
+
+5- Atualizar render em Apps.js para:
+
+     render(){
+        return <HomePage />;
+    }
+
+6- Crias paginas em components:
+    
+    RoomJoinPage.js
+    CreateRoomPage.js
+
+7- Importar em Apps.js:
+
+    import CreateRoomPage from "./CreateRoomPage";
+    import RoomJoinPage from "./RoomJoinPage";  
+    
