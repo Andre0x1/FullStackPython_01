@@ -115,4 +115,10 @@ Parte 03
     
     npm run dev
 
+Parte 04
 
+1- Criar em frontend/static/css: index.css
+
+2- Criar estilos:
+        
+    #nome_id:
