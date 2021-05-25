@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import {render} from "react-dom";
-import Homepage from "./HomePage";
-import CreateRoomPage from "./CreateRoomPage";
-import RoomJoinPage from "./RoomJoinPage";
+import HomePage from "./HomePage";
 import {Home} from "@material-ui/icons";
 
 
@@ -11,7 +9,9 @@ export default class App extends  Component{
         super(props);
     }
     render(){
-        return <HomePage />;
+        return (<div>
+            <HomePage />
+            </div>);
     }
 }
 

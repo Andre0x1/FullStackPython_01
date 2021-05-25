@@ -141,8 +141,25 @@ Parte 04
     RoomJoinPage.js
     CreateRoomPage.js
 
-7- Importar em Apps.js:
+7- Importar em HomePage.js:
 
     import CreateRoomPage from "./CreateRoomPage";
-    import RoomJoinPage from "./RoomJoinPage";  
+    import RoomJoinPage from "./RoomJoinPage"; 
+    import {BrowserRouter as Router,Switch,Route,Link,Redirect} from "react-router-dom";
+
+8- Criar dentro de render() Router com Switch para Routes das paginas criadas:
+
+    <Router>
+        <Switch>
+            <Route exact path='/'><p>Homepage</p></Route>
+            --etc..
+        </Switch>
+    </Router>
+
+9- Atualizar as path em urls.py:
+
+
+
+    
+
     
