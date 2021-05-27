@@ -181,7 +181,7 @@ Nescesario instalação:
 
     class CreateRoomView(APIView):
    
-5- Derfnir função Post e tratamento dos dados
+5- Definir função Post e tratamento dos dados
 
 6-  Ajustar chamada da nova função em urls.py
 
