@@ -8,6 +8,7 @@ Nescesario instalação:
     Node.js: pip install nodejs
     Rest_framework:pip install djangorestframework 
 
+#PARTE 01
 
 1- Passos durante a criação do projeto:
 
@@ -29,7 +30,7 @@ Nescesario instalação:
 	python .\manage.py migrate
 	python .\manage.py runserver
 
-Parte -02
+#Parte 02
 
 1- Criar modelos em NomeApp.models
 
@@ -50,7 +51,7 @@ Parte -02
     python .\manage.py makemigrations
 	python .\manage.py migrate
 
-Parte 03
+#Parte 03
 
 1- Instalar NPM e NodeJS.
 
@@ -115,7 +116,7 @@ Parte 03
     
     npm run dev
 
-Parte 04
+#Parte 04
 
 1- Criar em frontend/static/css: index.css
 
@@ -158,8 +159,31 @@ Parte 04
 
 9- Atualizar as path em urls.py:
 
+    path('join', index),
+    path('create', index),
 
 
-    
+#Parte 05
 
+1- Importar em views.py
+
+    from rest_framework.views import APIView
+    from rest_framework.response import Response
+    from rest_framework import generics,status
+
+2- Definir outro Serializer em Serializer.py
+
+3- Importar ele em views.py
+
+    from .serializers import RoomSerializers, CreateRoomSerializer
+
+4- Criar nova classe em view.py
+
+    class CreateRoomView(APIView):
+   
+5- Definir função Post e tratamento dos dados
+
+6-  Ajustar chamada da nova função em urls.py
+
+    path('create-room', CreateRoomView.as_view())
     
