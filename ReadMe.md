@@ -186,4 +186,30 @@ Nescesario instalação:
 6-  Ajustar chamada da nova função em urls.py
 
     path('create-room', CreateRoomView.as_view())
-    
+
+#Parte 06
+
+1- Importar para CreateRoomPage.js
+
+    import {
+    Button,
+    Grid,
+    Typography,
+    TextField,
+    FormHelperText,
+    FormControl,
+    Radio,
+    RadioGroup,
+    FormControlLabel
+    } from "@material-ui/core"
+    import {Link} from "react-router-dom"
+
+2- Modelar a pagina para uso da requisição Create-room da api
+
+#Parte 07   
+
+1- Criar em components Room.js
+
+2- Atualizar HomePage.js para adicionar Room.js
+
+3- Adicionar caminho em urls.py
